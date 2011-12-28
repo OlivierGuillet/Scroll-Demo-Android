@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Scroll Demo</string>
+    <string name="header">Header Natif</string>
+    <string name="footer">Footer Natif</string>
+
+</resources>
