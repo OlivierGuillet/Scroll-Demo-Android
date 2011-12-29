@@ -22,7 +22,7 @@ public class ScrollDemoActivity extends Activity {
         findViewById(R.id.natif).setOnClickListener(dBClickListener);
         findViewById(R.id.hybride).setOnClickListener(dBClickListener);
         findViewById(R.id.iscroll4).setOnClickListener(dBClickListener);
-        findViewById(R.id.scrollability).setOnClickListener(dBClickListener);
+        findViewById(R.id.html5).setOnClickListener(dBClickListener);
     }        
     
     private class DashboardClickListener implements OnClickListener {
@@ -46,7 +46,12 @@ public class ScrollDemoActivity extends Activity {
                     // On met en place le passage entre les deux activités sur ce Listener
                     intent = new Intent(ScrollDemoActivity.this, IScrollViewActivity.class);
                     startActivity(intent);                     
-                    break;                    
+                    break;
+                case R.id.html5:
+                    // On met en place le passage entre les deux activités sur ce Listener
+                    intent = new Intent(ScrollDemoActivity.this, Html5ViewActivity.class);
+                    startActivity(intent);                     
+                    break;                      
                 default:
                     Toast.makeText(ScrollDemoActivity.this, "Not yet implemented", Toast.LENGTH_SHORT).show();
                     break;
