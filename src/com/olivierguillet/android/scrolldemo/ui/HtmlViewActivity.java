@@ -6,24 +6,26 @@ import android.view.View;
 import android.webkit.WebView;
 
 import com.olivierguillet.android.scrolldemo.R;
-import com.olivierguillet.android.scrolldemo.web.MyWebViewClient;
+import com.olivierguillet.android.scrolldemo.utils.Constants;
+import com.olivierguillet.android.scrolldemo.widget.MyWebViewClient;
 
-public class Html5ViewActivity extends Activity {
-    /** Called when the activity is first created. */
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
+public class HtmlViewActivity extends Activity {
+    
+    public void onCreate(Bundle savedInstanceState, String url) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.web_view);
         
+        initWebEngine(url);
+    }
+
+    public void initWebEngine(String url) {
         WebView engine = (WebView) findViewById(R.id.webview);
         
-        engine.loadUrl("http://olivierguillet.com/blog/demo/scroll-demo/scroll.html");
+        engine.loadUrl(Constants.url + url);
         engine.getSettings().setJavaScriptEnabled(true);
-        //engine.getSettings().setSaveFormData(true);
-        //engine.getSettings().setBuiltInZoomControls(true);
         engine.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        
-        engine.setWebViewClient(new MyWebViewClient());
+
+        engine.setWebViewClient(new MyWebViewClient());        
     }
     
 }

@@ -3,9 +3,9 @@ package com.olivierguillet.android.scrolldemo.ui;
 import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
 import com.olivierguillet.android.scrolldemo.R;
+import com.olivierguillet.android.scrolldemo.widget.MyWebViewClient;
 
 public class WebViewActivity extends Activity {
     /** Called when the activity is first created. */
@@ -22,16 +22,5 @@ public class WebViewActivity extends Activity {
         engine.getSettings().setBuiltInZoomControls(true);
         engine.setWebViewClient(new MyWebViewClient());
     }
-    
-    public class MyWebViewClient extends WebViewClient {
-        
-        /** Shows the web page in webview but not in web browser. */    
-        @Override 
-        public boolean shouldOverrideUrlLoading(WebView view, String url) { 
-            view.loadUrl(url);
-            return true;
-        }
-
-    }    
-    
+           
 }
