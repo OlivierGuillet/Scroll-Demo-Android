@@ -4,8 +4,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <LinearLayout 
-        android:orientation="horizontal" 
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1">
@@ -13,9 +13,9 @@
             android:id="@+id/natif"
             android:gravity="center"
             android:text="Natif"
-            android:padding="3dip" 
+            android:padding="3dip"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" 
+            android:layout_height="fill_parent"
             android:layout_weight="1" />
         <View
             android:layout_width="2dp"
@@ -25,17 +25,17 @@
             android:id="@+id/hybride"
             android:text="Hybride"
             android:gravity="center"
-            android:padding="3dip" 
+            android:padding="3dip"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" 
+            android:layout_height="fill_parent"
             android:layout_weight="1" />
     </LinearLayout>
 
-    <View        
+    <View
         android:background="#FF909090"
         android:layout_height="2dp"
         android:layout_width="fill_parent" />
-        
+
     <LinearLayout 
         android:orientation="horizontal" 
         android:layout_width="fill_parent"
@@ -47,8 +47,8 @@
             android:gravity="center"
             android:padding="3dip" 
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" 
-            android:layout_weight="1" />        
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
         <View
             android:layout_width="2dp"
             android:layout_height="fill_parent"
@@ -59,15 +59,15 @@
             android:text="iScroll4"
             android:padding="3dip" 
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" 
-            android:layout_weight="1"/>        
+            android:layout_height="fill_parent"
+            android:layout_weight="1"/>
     </LinearLayout>
-    
-    <View        
+
+    <View
         android:background="#FF909090"
         android:layout_height="2dp"
-        android:layout_width="fill_parent" />    
-        
+        android:layout_width="fill_parent" />
+
     <LinearLayout 
         android:orientation="horizontal" 
         android:layout_width="fill_parent"
@@ -79,7 +79,7 @@
             android:text="Scrollability"
             android:padding="3dip" 
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" 
+            android:layout_height="fill_parent"
             android:layout_weight="1"/>
         <View
             android:layout_width="2dp"
@@ -91,8 +91,8 @@
             android:gravity="center"
             android:padding="3dip" 
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" 
+            android:layout_height="fill_parent"
             android:layout_weight="1" />
-    </LinearLayout>    
+    </LinearLayout>
 
 </LinearLayout>

@@ -7,5 +7,5 @@ public class TouchScrollActivity extends HtmlViewActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState,"touchscroll.html");
     }
-    
+
 }

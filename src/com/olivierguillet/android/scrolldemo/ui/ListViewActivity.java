@@ -12,7 +12,7 @@ import android.widget.SimpleAdapter;
 import com.olivierguillet.android.scrolldemo.R;
 
 public class ListViewActivity extends ListActivity {
-    /** Called when the activity is first created. */
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
