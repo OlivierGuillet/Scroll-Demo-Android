@@ -8,88 +8,67 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="1">
-        <TextView
+        android:layout_weight="1"
+        android:paddingTop="3dp">
+        <Button
             android:id="@+id/natif"
             android:gravity="center"
-            android:text="Natif"
-            android:padding="3dip"
+            android:text="Natif\n(une ListView)"
+            android:layout_margin="0dp"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1" />
-        <View
-            android:layout_width="2dp"
-            android:layout_height="fill_parent"
-            android:background="#FF909090" />
-        <TextView
+        <Button
             android:id="@+id/hybride"
-            android:text="Hybride"
+            android:text="Hybride\n(une WebView dans un RelativeLayout)"
             android:gravity="center"
-            android:padding="3dip"
+            android:padding="3dp"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1" />
     </LinearLayout>
-
-    <View
-        android:background="#FF909090"
-        android:layout_height="2dp"
-        android:layout_width="fill_parent" />
 
     <LinearLayout 
         android:orientation="horizontal" 
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1">
-        <TextView
+        <Button
             android:id="@+id/html5"
-            android:text="HTML5"
+            android:text="HTML5\n(overflow:auto et position:fixed)"
             android:gravity="center"
-            android:padding="3dip" 
+            android:padding="3dp" 
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1" />
-        <View
-            android:layout_width="2dp"
-            android:layout_height="fill_parent"
-            android:background="#FF909090" />
-        <TextView
+        <Button
             android:id="@+id/iscroll4"
             android:gravity="center"
-            android:text="iScroll4"
-            android:padding="3dip" 
+            android:text="iScroll4\n(librairie javascript)"
+            android:padding="3dp" 
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"/>
     </LinearLayout>
-
-    <View
-        android:background="#FF909090"
-        android:layout_height="2dp"
-        android:layout_width="fill_parent" />
 
     <LinearLayout 
         android:orientation="horizontal" 
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1">
-        <TextView
+        <Button
             android:id="@+id/scrollability"
             android:gravity="center"
-            android:text="Scrollability"
-            android:padding="3dip" 
+            android:text="Scrollability\n(librairie javascript)"
+            android:padding="3dp" 
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"/>
-        <View
-            android:layout_width="2dp"
-            android:layout_height="fill_parent"
-            android:background="#FF909090" />
-        <TextView
+        <Button
             android:id="@+id/touchscroll"
-            android:text="TouchScroll"
+            android:text="TouchScroll\n(librairie javascript)"
             android:gravity="center"
-            android:padding="3dip" 
+            android:padding="3dp" 
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1" />
