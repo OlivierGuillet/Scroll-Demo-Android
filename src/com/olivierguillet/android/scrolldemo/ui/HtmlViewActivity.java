@@ -2,6 +2,7 @@ package com.olivierguillet.android.scrolldemo.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 
@@ -13,15 +14,18 @@ public class HtmlViewActivity extends Activity {
     
     public void onCreate(Bundle savedInstanceState, String url) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.web_view);
-        
-        initWebEngine(url);
+        try {
+            setContentView(R.layout.web_view);        
+            initWebEngine(url);
+        } catch (Exception ex) {            
+            Log.e(getString(R.string.app_name), "Erreur HtmlViewActivity#onCreate", ex);
+        }
     }
 
     public void initWebEngine(String url) {
         WebView engine = (WebView) findViewById(R.id.webview);
         
-        engine.loadUrl(Constants.url + url);
+        engine.loadUrl(Constants.URL + url);
         engine.getSettings().setJavaScriptEnabled(true);
         engine.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
 
